@@ -1,0 +1,99 @@
+{
+	"invocation": "voice clues",
+	"intents": [
+		{
+			"name": "StartQuizIntent",
+			"phrases": [
+				"start the quiz",
+				"start the game",
+				"start"
+			]
+		},
+		{
+			"name": "AnswerIsIntent",
+			"phrases": [
+				"option {option}",
+				"{option}"
+			],
+			"inputs": [
+				{
+					"name": "option",
+					"type": {
+						"alexa": "AMAZON.NUMBER",
+						"dialogflow": "@sys.number"
+					}
+				}
+			]
+		},
+		{
+			"name": "RepeatIntent",
+			"phrases": [
+				"repeat the question",
+				"repeat"
+			]
+		},
+		{
+			"name": "HelpIntent",
+			"phrases": [
+				"help",
+				"i need help"
+			]
+		},
+		{
+			"name": "ScoreCardIntent",
+			"phrases": [
+				"show my score card",
+				"whats my lifetime points",
+				"score card"
+			]
+		}
+	],
+	"alexa": {
+		"interactionModel": {
+			"languageModel": {
+				"intents": [
+					{
+						"name": "AMAZON.CancelIntent",
+						"samples": []
+					},
+					{
+						"name": "AMAZON.HelpIntent",
+						"samples": []
+					},
+					{
+						"name": "AMAZON.StopIntent",
+						"samples": []
+					},
+					{
+						"name":"AMAZON.RepeatIntent",
+						"samples": []
+					},
+					{
+						"name":"AMAZON.FallbackIntent",
+						"samples":[]
+					}
+				]
+			}
+		}
+	},
+	"dialogflow": {
+		"intents": [
+			{
+				"name": "Default Fallback Intent",
+				"auto": true,
+				"webhookUsed": true,
+				"fallbackIntent": true
+			},
+			{
+				"name": "Default Welcome Intent",
+				"auto": true,
+				"webhookUsed": true,
+				"events": [
+					{
+						"name": "WELCOME"
+					}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,73 @@
+{
+	"interactionModel": {
+		"languageModel": {
+			"invocationName": "voice clues",
+			"types": [],
+			"intents": [
+				{
+					"name": "StartQuizIntent",
+					"samples": [
+						"start the quiz",
+						"start the game",
+						"start"
+					]
+				},
+				{
+					"name": "AnswerIsIntent",
+					"samples": [
+						"option {option}",
+						"{option}"
+					],
+					"slots": [
+						{
+							"name": "option",
+							"type": "AMAZON.NUMBER"
+						}
+					]
+				},
+				{
+					"name": "RepeatIntent",
+					"samples": [
+						"repeat the question",
+						"repeat"
+					]
+				},
+				{
+					"name": "HelpIntent",
+					"samples": [
+						"help",
+						"i need help"
+					]
+				},
+				{
+					"name": "ScoreCardIntent",
+					"samples": [
+						"show my score card",
+						"whats my lifetime points",
+						"score card"
+					]
+				},
+				{
+					"name": "AMAZON.CancelIntent",
+					"samples": []
+				},
+				{
+					"name": "AMAZON.HelpIntent",
+					"samples": []
+				},
+				{
+					"name": "AMAZON.StopIntent",
+					"samples": []
+				},
+				{
+					"name": "AMAZON.RepeatIntent",
+					"samples": []
+				},
+				{
+					"name": "AMAZON.FallbackIntent",
+					"samples": []
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,17 @@
+{
+	"alexaSkill": {
+		"nlu": {
+			"name": "alexa"
+		}
+	},
+	"endpoint": " ",
+	"googleAction": {
+		"nlu": {
+			"name": "dialogflow"
+		},
+		"dialogflow": {
+			"projectId": "voiceclues",
+    		"keyFile": " "
+		}
+	}
+}

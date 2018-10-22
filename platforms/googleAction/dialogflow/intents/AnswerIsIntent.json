@@ -1,0 +1,17 @@
+{
+	"name": "AnswerIsIntent",
+	"auto": true,
+	"webhookUsed": true,
+	"responses": [
+		{
+			"parameters": [
+				{
+					"isList": false,
+					"name": "option",
+					"value": "$option",
+					"dataType": "@sys.number"
+				}
+			]
+		}
+	]
+}
